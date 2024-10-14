@@ -1,11 +1,22 @@
-.navs {
-  ul {
-    padding: 0;
-    list-style: none;
-    display: flex;
-  }
+.main-only {
+  height: calc(100vh - env(safe-area-inset-bottom));
+  overflow: auto;
+}
 
-  li {
-    margin-right: 1px;
+.main {
+  height: calc(100vh - 50px - env(safe-area-inset-bottom));
+  overflow: auto;
+}
+
+.bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  z-index: 999;
+
+  .tabbar {
+    height: 50px;
   }
 }

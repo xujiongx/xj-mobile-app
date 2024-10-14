@@ -1,24 +1,14 @@
-import { Button } from 'antd-mobile';
-import { history, useLocation } from 'umi';
+import { Switch } from 'antd-mobile';
+import { Helmet } from 'umi';
 import styles from './index.less';
 
-export default function HomePage() {
-  const {} = useLocation();
+export default function Page() {
   return (
     <div className={styles['page']}>
-      <h2 className={styles['h1']} onClick={() => history.push('/')}>
-        Yay! Welcome to umi!
-      </h2>
-      <p
-        style={{
-          fontSize: '40px',
-        }}
-      >
-        To get started, edit <code>pages/index.tsx</code> and save to reload.
-      </p>
-      <Button fill="none" shape="rounded" size="small">
-        哈哈
-      </Button>
+      <Helmet title="首页" />
+      <div className={styles['title']}>首页</div>
+      <Switch />
+      <div style={{ height: '100vh' }}>11</div>
     </div>
   );
 }

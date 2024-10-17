@@ -1,5 +1,5 @@
-import { Switch } from 'antd-mobile';
-import { Helmet } from 'umi';
+import { Button, Switch } from 'antd-mobile';
+import { Helmet, history } from 'umi';
 import styles from './index.less';
 
 export default function Page() {
@@ -8,7 +8,8 @@ export default function Page() {
       <Helmet title="首页" />
       <div className={styles['title']}>首页</div>
       <Switch />
-      <div style={{ height: '100vh' }}>11</div>
+      <Button onClick={() => history.push('/devices/battery')}>电量</Button>
+      <Button onClick={() => history.push('/devices/voices')}>录音</Button>
     </div>
   );
 }

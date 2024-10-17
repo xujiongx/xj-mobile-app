@@ -14,4 +14,14 @@ export default [
     name: '我的',
     component: '@/pages/My',
   },
+  {
+    path: '/devices/battery',
+    name: '电量',
+    component: '@/pages/subpackages/Devices/pages/Battery',
+  },
+  {
+    path: '/devices/voices',
+    name: '录音',
+    component: '@/pages/subpackages/Devices/pages/Voices',
+  },
 ];

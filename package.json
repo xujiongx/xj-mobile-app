@@ -12,9 +12,12 @@
     "start": "npm run dev"
   },
   "dependencies": {
+    "@types/react-speech-recognition": "^3.9.5",
     "antd-mobile": "^5.37.1",
     "antd-mobile-icons": "^0.3.0",
     "dayjs": "^1.11.13",
+    "react-speech-recognition": "^3.10.0",
+    "react-use": "^17.5.1",
     "umi": "^4.3.20",
     "umi-request": "^1.4.0"
   },
